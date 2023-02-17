@@ -1,3 +1,5 @@
+
+
 function updatePhoneNumber (isIncrease){
     const phoneNumberField = document.getElementById('phone-number-field');
     const phoneNumberString = phoneNumberField.value;
@@ -9,7 +11,7 @@ function updatePhoneNumber (isIncrease){
         newPhoneNumber = previousPhoneNumber + 1;
     }
     else{
-        newPhoneNumber = previousPhoneNumber - 1;
+        newPhoneNumber = previousPhoneNumber > 1 ? previousPhoneNumber - 1 : 1;
     }
     phoneNumberField.value = newPhoneNumber;
     

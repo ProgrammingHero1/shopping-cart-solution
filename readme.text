@@ -1,0 +1,17 @@
+
+User can not select less thean 1 pice of a product either it is 
+iphone or case.
+
+    What I have changed:
+
+        from:
+        else{
+        newPhoneNumber = previousPhoneNumber - 1 ;
+        }
+
+        to:
+        else{
+        newPhoneNumber = previousPhoneNumber > 1 ? previousPhoneNumber - 1 : 1;
+        }
+
+    same thing for the phone case.
